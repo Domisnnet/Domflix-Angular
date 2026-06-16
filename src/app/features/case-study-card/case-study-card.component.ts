@@ -16,7 +16,7 @@ export interface CaseStudyData {
   standalone: true,
   imports: [CommonModule],
   templateUrl: './case-study-card.component.html',
-  styleUrl: './case-study-card.component.scss',
+  styleUrls: ['./case-study-card.component.scss'],
 })
 export class CaseStudyCardComponent {
   @Input({ required: true }) caseStudy!: CaseStudyData;

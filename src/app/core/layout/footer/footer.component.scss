@@ -1,12 +1,18 @@
+:host {
+  display: block;
+  width: 100%;
+  z-index: 30;
+}
+
 .footer {
-    padding: 1rem 1.5rem;
-    text-align: center;
-    color: rgba(255, 255, 255, 0.72);
-    border-top: 1px solid rgba(255, 255, 255, 0.08);
-    background: rgba(5, 8, 22, 0.96);
+  padding: 1rem 1.5rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.72);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(0, 0, 0, 0.9);
 }
 
 .footer__subtitle {
-    margin-top: 0.25rem;
-    font-size: 0.85rem;
+  margin-top: 0.25rem;
+  font-size: 0.85rem;
 }

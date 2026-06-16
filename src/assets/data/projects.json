@@ -1,0 +1,24 @@
+[
+  {
+    "title": "Domflix",
+    "cover": "assets/images/4.png",
+    "description": "Portfólio em formato de streaming.",
+    "tech": [
+      "Angular",
+      "SCSS",
+      "TypeScript"
+    ],
+    "category": "featured"
+  },
+  {
+    "title": "Laboratório Visual",
+    "cover": "assets/images/3.webp",
+    "description": "Experimentos com layout e animação.",
+    "tech": [
+      "HTML",
+      "CSS",
+      "JS"
+    ],
+    "category": "lab"
+  }
+]

@@ -1,6 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ProjectCardComponent, ProjectCardData } from '../project-card/project-card.component';
+import { ProjectCardComponent } from '@app/features/project-card/project-card.component';
+import { ProjectModel } from '@app/core/models/project.model';
 
 @Component({
   selector: 'app-catalog-row',
@@ -11,5 +12,5 @@ import { ProjectCardComponent, ProjectCardData } from '../project-card/project-c
 })
 export class CatalogRowComponent {
   @Input() title = '';
-  @Input() items: ProjectCardData[] = [];
+  @Input() items: ProjectModel[] = [];
 }

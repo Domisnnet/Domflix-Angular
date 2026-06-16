@@ -1,10 +1,10 @@
 <article class="project-card">
-  <img [src]="project.cover" [alt]="project.title" class="project-card__image" />
+  <img [src]="project.imageUrl" [alt]="project.title">
   <div class="project-card__body">
     <h3>{{ project.title }}</h3>
-    <p *ngIf="project.description">{{ project.description }}</p>
-    <div class="project-card__tech" *ngIf="project.tech?.length">
-      <span *ngFor="let item of project.tech">{{ item }}</span>
+    <p>{{ project.description }}</p>
+    <div class="project-card__tech">
+      <span *ngFor="let tech of project.tech">{{ tech }}</span>
     </div>
   </div>
 </article>

@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Dom",
+    "imgSrc": "assets/images/4.webp",
+    "label": "Developer"
+  },
+  {
+    "name": "Alexander",
+    "imgSrc": "assets/images/3.webp",
+    "label": "UI Explorer"
+  },
+  {
+    "name": "Fabiana",
+    "imgSrc": "assets/images/2.webp",
+    "label": "Case Studies"
+  },
+  {
+    "name": "Fernanda",
+    "imgSrc": "assets/images/1.webp",
+    "label": "Portfolio"
+  }
+]

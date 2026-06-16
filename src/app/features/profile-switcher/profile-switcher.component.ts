@@ -20,7 +20,7 @@ export class ProfileSwitcherComponent {
     { name: 'Fernanda', imgSrc: 'assets/images/1.webp' },
     { name: 'Fabiana', imgSrc: 'assets/images/2.webp' },
     { name: 'Alexander', imgSrc: 'assets/images/3.webp' },
-    { name: 'Dom', imgSrc: 'assets/images/4.webp' },
+    { name: 'Dom', imgSrc: 'assets/images/4.png' },
   ];
 
   selectProfile(profile: ProfileItem): void {

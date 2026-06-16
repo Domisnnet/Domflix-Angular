@@ -1,0 +1,15 @@
+[
+  {
+    "title": "Transformação do Domflix",
+    "cover": "assets/images/4.png",
+    "summary": "Da página estática para uma experiência em camadas.",
+    "problem": "Mostrar projetos de forma mais envolvente.",
+    "solution": "Organizar conteúdo em rows, cards e páginas detalhadas.",
+    "result": "Base pronta para open source e futura versão premium.",
+    "stack": [
+      "Angular",
+      "Router",
+      "SCSS"
+    ]
+  }
+]

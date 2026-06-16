@@ -1,16 +1,37 @@
-<section class="home">
-  <div class="home__hero">
-    <h1>{{ featuredTitle }}</h1>
-    <p>Seu portfólio em formato de streaming, com projetos, case studies e experiências interativas.</p>
-    <div class="home__actions">
-      <a routerLink="/profiles" class="btn btn--primary">Escolher perfil</a>
-      <a routerLink="/catalog" class="btn btn--secondary">Ver catálogo</a>
+<section class="home-page">
+  <section class="hero">
+    <div class="hero__content">
+      <p class="hero__eyebrow">Open Source Portfolio</p>
+      <h1>Domflix</h1>
+      <p class="hero__description">
+        Um Portfólio em formato de streaming, pensado para mostrar projetos,
+        case studies e experimentos de forma visual, modular e escalável.
+      </p>
+      <div class="hero__actions">
+        <a routerLink="/catalog" class="btn btn--primary">Ver catálogo</a>
+        <a routerLink="/case-studies" class="btn btn--secondary">Explorar case studies</a>
+      </div>
     </div>
-  </div>
-  <section class="home__row">
-    <h2>Projetos em destaque</h2>
-    <div class="home__cards">
-      <ng-content></ng-content>
+  </section>
+  <section class="home-page__rows" *ngIf="featuredProjects$ | async as featuredProjects">
+    <app-catalog-row title="Projetos em destaque" [items]="featuredProjects"></app-catalog-row>
+  </section>
+  <section class="home-page__rows" *ngIf="experiments$ | async as experiments">
+    <app-catalog-row title="Experimentos e laboratório" [items]="experiments"></app-catalog-row>
+  </section>
+  <section class="home-page__case" *ngIf="caseStudies$ | async as caseStudies">
+    <header class="home-page__section-header">
+      <h2>Case studies recentes</h2>
+      <a routerLink="/case-studies">Ver todos</a>
+    </header>
+    <div class="home-page__case-grid">
+      <article class="home-page__case-card" *ngFor="let study of caseStudies">
+        <img [src]="study.imageUrl" [alt]="study.title" />
+        <div>
+          <h3>{{ study.title }}</h3>
+          <p>{{ study.description }}</p>
+        </div>
+      </article>
     </div>
   </section>
 </section>
