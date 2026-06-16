@@ -1,162 +1,227 @@
-
 # 🎬 DOMFLIX
 
-> Uma plataforma inspirada na experiência de streaming da Netflix para apresentar projetos, estudos de caso, templates e conteúdos de forma moderna, intuitiva e responsiva.
+<p align="center">
+  <img src="./docs/logo.svg" width="180">
+</p>
+
+<h1 align="center">DOMFLIX</h1>
+
+<p align="center">
+  Seu portfólio com experiência de streaming.
+</p>
+
+<p align="center">
+
+![Angular](https://img.shields.io/badge/Angular-20-DD0031?style=for-the-badge&logo=angular)
+![Firebase](https://img.shields.io/badge/Firebase-Enabled-FFCA28?style=for-the-badge&logo=firebase)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?style=for-the-badge&logo=typescript)
+![SCSS](https://img.shields.io/badge/SCSS-Modern-CC6699?style=for-the-badge&logo=sass)
+
+</p>
 
 ---
 
-## 📖 Sobre o Projeto
+# ✨ Visão Geral
 
-O **DOMFLIX** é uma aplicação desenvolvida para proporcionar uma experiência semelhante às grandes plataformas de streaming, transformando projetos, estudos de caso e templates em um catálogo organizado e agradável de navegar.
+O **DOMFLIX** é uma aplicação desenvolvida para transformar um portfólio tradicional em uma verdadeira plataforma de streaming de projetos.
 
-A plataforma foi projetada com foco em:
+Em vez de simplesmente listar trabalhos realizados, cada projeto é tratado como um "título" dentro de um catálogo, oferecendo uma experiência de navegação rica, intuitiva e visualmente envolvente.
 
-- 🎯 Portfólio profissional
-- 📚 Documentação de projetos
-- 💼 Estudos de caso (Case Studies)
-- 🛒 Comercialização de templates
-- 👤 Perfis personalizados
-- ⚙️ Configurações do usuário
+O objetivo é unir:
+
+* 🎯 Portfólio Profissional
+* 📚 Documentação Técnica
+* 💼 Case Studies
+* 🛒 Marketplace de Templates
+* 👤 Perfis Personalizados
+* ⚙️ Configurações do Usuário
 
 ---
 
-# ✨ Funcionalidades
+# 🎯 Objetivos
+
+O DOMFLIX foi criado seguindo cinco pilares principais:
+
+* Experiência semelhante à Netflix
+* Arquitetura escalável
+* Componentização reutilizável
+* Performance
+* Design consistente
+
+---
+
+# 🚀 Principais Recursos
 
 ## 🏠 Home
 
-Página inicial responsável por apresentar os principais conteúdos da plataforma.
+A porta de entrada da plataforma.
 
 ### Recursos
 
-- Hero principal
-- Seleção de perfis
-- Rows de conteúdo
-- CTA para o catálogo
+* Hero Banner
+* Seleção de Perfis
+* Continue Assistindo
+* Destaques
+* Conteúdo em Tendência
+* CTA para Explorar o Catálogo
 
 ---
 
 ## 👤 Perfis
 
-Gerenciamento completo dos perfis dos usuários.
+Cada usuário possui sua própria experiência.
 
 ### Recursos
 
-- Grid de perfis
-- Cards de perfil
-- Criar perfil
-- Editar perfil
+* Grid de Perfis
+* Avatar personalizado
+* Criação de Perfil
+* Edição de Perfil
+* Exclusão
+* Perfil Infantil (futuro)
 
 ---
 
 ## 🎞️ Catálogo
 
-Área responsável pela navegação e descoberta dos conteúdos disponíveis.
+Centro de navegação do conteúdo.
 
 ### Recursos
 
-- Filtros
-- Ordenação
-- Rows de conteúdo
-- Cards de projetos
+* Categorias
+* Filtros
+* Pesquisa
+* Ordenação
+* Conteúdo em Destaque
+* Rows horizontais
+* Cards inteligentes
 
 ---
 
 ## 💼 Projetos
 
-Área dedicada à apresentação dos projetos desenvolvidos.
+Apresentação detalhada dos projetos.
 
 ### Recursos
 
-- Grid de projetos
-- Preview
-- Página de detalhes
+* Página exclusiva
+* Tecnologias utilizadas
+* Screenshots
+* Links externos
+* Demonstração
+* Código-fonte
+* Informações técnicas
 
 ---
 
 ## 📚 Case Studies
 
-Documentação técnica dos projetos.
+Documentação completa do desenvolvimento.
 
-Cada estudo de caso pode conter:
+Cada projeto pode possuir:
 
-- Timeline
-- Métricas
-- Cards
-- Página detalhada
+* Timeline
+* Processo de desenvolvimento
+* Problemas encontrados
+* Soluções adotadas
+* Arquitetura
+* Métricas
+* Lições aprendidas
 
 ---
 
 ## 🛒 Template Store
 
-Área destinada à comercialização de templates.
+Marketplace para comercialização de templates.
 
 ### Recursos
 
-- Pricing Cards
-- Lista de funcionalidades
-- Download CTA
-- Integração com Gumroad
+* Pricing Cards
+* Demonstrações
+* Recursos inclusos
+* Download
+* Integração com Gumroad
 
 ---
 
 ## ⚙️ Configurações
 
-Preferências da aplicação.
+Preferências da plataforma.
 
 ### Recursos
 
-- Alternância de tema
-- Idioma
-- Preferências de layout
+* Tema Claro/Escuro
+* Idioma
+* Preferências de Layout
+* Configurações de Conta
 
 ---
 
 # 🏗️ Arquitetura
 
 ```
-
 DOMFLIX
 │
 ├── Home
-│   ├── Hero
-│   ├── Profiles
-│   ├── Content Rows
-│   └── CTA
-│
 ├── Profiles
-│   ├── Grid
-│   ├── Cards
-│   └── Create / Edit
-│
 ├── Catalog
-│   ├── Filter
-│   ├── Sort
-│   ├── Rows
-│   └── Project Cards
-│
 ├── Projects
-│   ├── Grid
-│   ├── Preview
-│   └── Detail
-│
 ├── Case Studies
-│   ├── Cards
-│   ├── Timeline
-│   ├── Metrics
-│   └── Detail
-│
 ├── Template Store
-│   ├── Pricing
-│   ├── Features
-│   ├── Download
-│   └── Gumroad
+├── Settings
 │
-└── Settings
-├── Theme
-├── Language
-└── Layout
+├── Shared
+│
+│   ├── Components
+│   ├── Layouts
+│   ├── Services
+│   ├── Pipes
+│   ├── Directives
+│   └── Utilities
+│
+├── Core
+│
+│   ├── Guards
+│   ├── Interceptors
+│   ├── Authentication
+│   ├── Firebase
+│   └── API
+│
+└── Design System
+    ├── Tokens
+    ├── Colors
+    ├── Typography
+    ├── Spacing
+    ├── Icons
+    ├── Components
+    └── Animations
+```
 
-````
+---
+
+# 🎨 Design System
+
+Toda a interface utiliza um Design System próprio baseado em Design Tokens.
+
+## Princípios
+
+* Consistência visual
+* Componentização
+* Escalabilidade
+* Responsividade
+* Acessibilidade
+* Reutilização
+
+### Tokens
+
+* Colors
+* Typography
+* Spacing
+* Radius
+* Shadows
+* Motion
+* Z-index
+* Breakpoints
 
 ---
 
@@ -164,147 +229,67 @@ DOMFLIX
 
 ```mermaid
 flowchart TD
-    A([DOMFLIX]):::brand
 
-    subgraph S1[Entrada]
-        B[Home]:::home
-        B1[Hero principal]:::home
-        B2[Seleção de perfis]:::home
-        B3[Rows de conteúdo]:::home
-        B4[CTA catálogo]:::home
-    end
+Home --> Profiles
 
-    subgraph S2[Experiência do usuário]
-        C[Profiles]:::profiles
-        C1[Profile grid]:::profiles
-        C2[Profile card]:::profiles
-        C3[Criar / editar perfil]:::profiles
-    end
+Profiles --> Catalog
 
-    subgraph S3[Exploração de conteúdo]
-        D[Catalog]:::catalog
-        D1[Catalog filter]:::catalog
-        D2[Catalog sort]:::catalog
-        D3[Catalog row]:::catalog
-        D4[Project card]:::catalog
-    end
+Catalog --> Projects
 
-    subgraph S4[Projetos]
-        E[Projects]:::projects
-        E1[Project grid]:::projects
-        E2[Project preview]:::projects
-        E3[Project detail]:::projects
-    end
+Projects --> CaseStudies
 
-    subgraph S5[Bastidores]
-        F[Case Studies]:::cases
-        F1[Case study card]:::cases
-        F2[Timeline]:::cases
-        F3[Metrics]:::cases
-        F4[Case detail]:::cases
-    end
+Projects --> TemplateStore
 
-    subgraph S6[Monetização]
-        G[Template Store]:::store
-        G1[Pricing card]:::store
-        G2[Feature list]:::store
-        G3[Download CTA]:::store
-        G4[Gumroad link]:::store
-    end
+Settings --> Theme
 
-    subgraph S7[Ajustes]
-        H[Settings]:::settings
-        H1[Theme toggle]:::settings
-        H2[Language toggle]:::settings
-        H3[Layout preferences]:::settings
-    end
+Settings --> Language
 
-    A --> B
-    A --> C
-    A --> D
-    A --> E
-    A --> F
-    A --> G
-    A --> H
-
-    B --> B1
-    B --> B2
-    B --> B3
-    B --> B4
-
-    B3 --> F1
-    B3 --> D4
-
-    C --> C1
-    C --> C2
-    C --> C3
-
-    D --> D1
-    D --> D2
-    D --> D3
-    D --> D4
-
-    E --> E1
-    E --> E2
-    E --> E3
-
-    F --> F1
-    F --> F2
-    F --> F3
-    F --> F4
-
-    G --> G1
-    G --> G2
-    G --> G3
-    G --> G4
-
-    H --> H1
-    H --> H2
-    H --> H3
-
-    classDef brand fill:#111827,stroke:#f97316,stroke-width:3px,color:#ffffff,font-weight:bold;
-    classDef home fill:#1f2937,stroke:#ef4444,stroke-width:1.5px,color:#ffffff;
-    classDef profiles fill:#0f172a,stroke:#8b5cf6,stroke-width:1.5px,color:#ffffff;
-    classDef catalog fill:#111827,stroke:#06b6d4,stroke-width:1.5px,color:#ffffff;
-    classDef projects fill:#0b1220,stroke:#22c55e,stroke-width:1.5px,color:#ffffff;
-    classDef cases fill:#111827,stroke:#f59e0b,stroke-width:1.5px,color:#ffffff;
-    classDef store fill:#111827,stroke:#ec4899,stroke-width:1.5px,color:#ffffff;
-    classDef settings fill:#111827,stroke:#94a3b8,stroke-width:1.5px,color:#ffffff;
-
-    style S1 fill:#0b0f19,stroke:#ef4444,stroke-width:1px,stroke-dasharray: 5 5
-    style S2 fill:#0b0f19,stroke:#8b5cf6,stroke-width:1px,stroke-dasharray: 5 5
-    style S3 fill:#0b0f19,stroke:#06b6d4,stroke-width:1px,stroke-dasharray: 5 5
-    style S4 fill:#0b0f19,stroke:#22c55e,stroke-width:1px,stroke-dasharray: 5 5
-    style S5 fill:#0b0f19,stroke:#f59e0b,stroke-width:1px,stroke-dasharray: 5 5
-    style S6 fill:#0b0f19,stroke:#ec4899,stroke-width:1px,stroke-dasharray: 5 5
-    style S7 fill:#0b0f19,stroke:#94a3b8,stroke-width:1px,stroke-dasharray: 5 5
-````
+Settings --> Layout
+```
 
 ---
 
-# 🎨 Principais Características
+# ⚙️ Stack Tecnológica
 
-* Interface inspirada em plataformas de streaming
-* Arquitetura modular
-* Componentização reutilizável
-* Layout totalmente responsivo
-* Organização baseada em Features
-* Navegação intuitiva
-* Alta escalabilidade
+| Categoria      | Tecnologia              |
+| -------------- | ----------------------- |
+| Front-end      | Angular                 |
+| Linguagem      | TypeScript              |
+| Estilos        | SCSS                    |
+| Backend        | Firebase                |
+| Banco de Dados | Firestore               |
+| Storage        | Firebase Storage        |
+| Autenticação   | Firebase Authentication |
+| Design System  | Próprio                 |
+| Diagramas      | Mermaid                 |
 
 ---
 
-# 🚀 Tecnologias
+# 📱 Responsividade
 
-* HTML5
-* CSS3
-* SCSS
-* JavaScript
-* TypeScript
-* Angular
-* Firebase
-* Design System próprio
-* Mermaid
+O DOMFLIX foi desenvolvido utilizando uma abordagem **Mobile First**, garantindo uma experiência consistente em diferentes dispositivos.
+
+### Breakpoints
+
+* 📱 Mobile
+* 📲 Tablet
+* 💻 Notebook
+* 🖥️ Desktop
+* 🖥️ Ultra Wide
+
+---
+
+# ✨ Diferenciais
+
+* Interface inspirada na Netflix
+* Componentização avançada
+* Lazy Loading
+* Arquitetura Modular
+* Dark Mode
+* Alta Performance
+* Firebase Ready
+* Código altamente reutilizável
+* Escalável para novos módulos
 
 ---
 
@@ -320,16 +305,40 @@ flowchart TD
 * Template Store
 * Configurações
 
+---
+
 ## 🚧 Em desenvolvimento
 
-* Autenticação completa
-* Sistema de favoritos
-* Busca avançada
+* Sistema de Autenticação
+* Favoritos
+* Busca Inteligente
+* Dashboard Administrativo
+* Analytics
+* Comentários
+* Avaliações
 * Progressive Web App (PWA)
-* Dashboard administrativo
+
+---
+
+# 📂 Estrutura do Projeto
+
+```
+src/
+
+├── app/
+├── core/
+├── shared/
+├── layouts/
+├── pages/
+├── assets/
+├── environments/
+└── styles/
+```
 
 ---
 
 # 📄 Licença
 
-Este projeto foi desenvolvido para fins de estudo, demonstração de portfólio e evolução contínua da plataforma **DOMFLIX**.
+Este projeto foi desenvolvido para fins de estudo, evolução técnica e demonstração de portfólio.
+
+O DOMFLIX representa uma arquitetura moderna baseada em componentes reutilizáveis, Design System próprio e experiência inspirada nas principais plataformas de streaming.
