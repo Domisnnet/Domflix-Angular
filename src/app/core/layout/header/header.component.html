@@ -1,0 +1,14 @@
+<header class="header">
+  <div class="header__brand">
+    <a routerLink="/" class="header__logo">{{ title }}</a>
+  </div>
+  <nav class="header__nav" aria-label="Navegação principal">
+    <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+      Home
+    </a>
+    <a routerLink="/profiles" routerLinkActive="active">Perfis</a>
+    <a routerLink="/catalog" routerLinkActive="active">Catálogo</a>
+    <a routerLink="/projects" routerLinkActive="active">Projetos</a>
+    <a routerLink="/case-studies" routerLinkActive="active">Case Studies</a>
+  </nav>
+</header>

@@ -1,0 +1,29 @@
+.profiles {
+  padding: 2rem 1.5rem;
+}
+
+.profiles__list {
+  display: flex;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0 0;
+}
+
+.profiles__card {
+  display: grid;
+  justify-items: center;
+  gap: 0.75rem;
+  background: transparent;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+
+  img {
+    border-radius: 14px;
+    width: 128px;
+    height: 128px;
+    object-fit: cover;
+  }
+}

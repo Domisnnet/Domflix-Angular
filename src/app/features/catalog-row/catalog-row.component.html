@@ -1,0 +1,9 @@
+<section class="catalog-row">
+  <header class="catalog-row__header">
+    <h2>{{ title }}</h2>
+  </header>
+  <div class="catalog-row__list">
+    <app-project-card *ngFor="let item of items" [project]="item">
+    </app-project-card>
+  </div>
+</section>

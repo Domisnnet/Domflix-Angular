@@ -1,0 +1,11 @@
+<section class="profiles">
+  <h2>Quem está assistindo?</h2>
+  <ul class="profiles__list">
+    <li *ngFor="let profile of profiles">
+      <button type="button" class="profiles__card" (click)="selectProfile(profile)">
+        <img [src]="profile.imgSrc" [alt]="'Perfil de ' + profile.name" width="128" height="128" />
+        <span>{{ profile.name }}</span>
+      </button>
+    </li>
+  </ul>
+</section>

@@ -1,0 +1,10 @@
+<article class="case-card">
+  <img [src]="caseStudy.cover" [alt]="caseStudy.title" class="case-card__image" />
+  <div class="case-card__body">
+    <h3>{{ caseStudy.title }}</h3>
+    <p>{{ caseStudy.summary }}</p>
+    <div class="case-card__stack" *ngIf="caseStudy.stack?.length">
+      <span *ngFor="let tech of caseStudy.stack">{{ tech }}</span>
+    </div>
+  </div>
+</article>
