@@ -1,7 +1,7 @@
 # 🎬 DOMFLIX
 
 <p align="center">
-  <img src="./docs/logo.svg" width="180">
+  <img src="./src/assets/logo/logo.svg" width="180">
 </p>
 
 <h1 align="center">DOMFLIX</h1>
@@ -9,7 +9,6 @@
 <p align="center">
   Seu portfólio com experiência de streaming.
 </p>
-
 <p align="center">
 
 ![Angular](https://img.shields.io/badge/Angular-20-DD0031?style=for-the-badge&logo=angular)
