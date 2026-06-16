@@ -1,3 +1,168 @@
+
+# 🎬 DOMFLIX
+
+> Uma plataforma inspirada na experiência de streaming da Netflix para apresentar projetos, estudos de caso, templates e conteúdos de forma moderna, intuitiva e responsiva.
+
+---
+
+## 📖 Sobre o Projeto
+
+O **DOMFLIX** é uma aplicação desenvolvida para proporcionar uma experiência semelhante às grandes plataformas de streaming, transformando projetos, estudos de caso e templates em um catálogo organizado e agradável de navegar.
+
+A plataforma foi projetada com foco em:
+
+- 🎯 Portfólio profissional
+- 📚 Documentação de projetos
+- 💼 Estudos de caso (Case Studies)
+- 🛒 Comercialização de templates
+- 👤 Perfis personalizados
+- ⚙️ Configurações do usuário
+
+---
+
+# ✨ Funcionalidades
+
+## 🏠 Home
+
+Página inicial responsável por apresentar os principais conteúdos da plataforma.
+
+### Recursos
+
+- Hero principal
+- Seleção de perfis
+- Rows de conteúdo
+- CTA para o catálogo
+
+---
+
+## 👤 Perfis
+
+Gerenciamento completo dos perfis dos usuários.
+
+### Recursos
+
+- Grid de perfis
+- Cards de perfil
+- Criar perfil
+- Editar perfil
+
+---
+
+## 🎞️ Catálogo
+
+Área responsável pela navegação e descoberta dos conteúdos disponíveis.
+
+### Recursos
+
+- Filtros
+- Ordenação
+- Rows de conteúdo
+- Cards de projetos
+
+---
+
+## 💼 Projetos
+
+Área dedicada à apresentação dos projetos desenvolvidos.
+
+### Recursos
+
+- Grid de projetos
+- Preview
+- Página de detalhes
+
+---
+
+## 📚 Case Studies
+
+Documentação técnica dos projetos.
+
+Cada estudo de caso pode conter:
+
+- Timeline
+- Métricas
+- Cards
+- Página detalhada
+
+---
+
+## 🛒 Template Store
+
+Área destinada à comercialização de templates.
+
+### Recursos
+
+- Pricing Cards
+- Lista de funcionalidades
+- Download CTA
+- Integração com Gumroad
+
+---
+
+## ⚙️ Configurações
+
+Preferências da aplicação.
+
+### Recursos
+
+- Alternância de tema
+- Idioma
+- Preferências de layout
+
+---
+
+# 🏗️ Arquitetura
+
+```
+
+DOMFLIX
+│
+├── Home
+│   ├── Hero
+│   ├── Profiles
+│   ├── Content Rows
+│   └── CTA
+│
+├── Profiles
+│   ├── Grid
+│   ├── Cards
+│   └── Create / Edit
+│
+├── Catalog
+│   ├── Filter
+│   ├── Sort
+│   ├── Rows
+│   └── Project Cards
+│
+├── Projects
+│   ├── Grid
+│   ├── Preview
+│   └── Detail
+│
+├── Case Studies
+│   ├── Cards
+│   ├── Timeline
+│   ├── Metrics
+│   └── Detail
+│
+├── Template Store
+│   ├── Pricing
+│   ├── Features
+│   ├── Download
+│   └── Gumroad
+│
+└── Settings
+├── Theme
+├── Language
+└── Layout
+
+````
+
+---
+
+# 📊 Fluxo da Aplicação
+
+```mermaid
 flowchart TD
     A([DOMFLIX]):::brand
 
@@ -113,3 +278,58 @@ flowchart TD
     style S5 fill:#0b0f19,stroke:#f59e0b,stroke-width:1px,stroke-dasharray: 5 5
     style S6 fill:#0b0f19,stroke:#ec4899,stroke-width:1px,stroke-dasharray: 5 5
     style S7 fill:#0b0f19,stroke:#94a3b8,stroke-width:1px,stroke-dasharray: 5 5
+````
+
+---
+
+# 🎨 Principais Características
+
+* Interface inspirada em plataformas de streaming
+* Arquitetura modular
+* Componentização reutilizável
+* Layout totalmente responsivo
+* Organização baseada em Features
+* Navegação intuitiva
+* Alta escalabilidade
+
+---
+
+# 🚀 Tecnologias
+
+* HTML5
+* CSS3
+* SCSS
+* JavaScript
+* TypeScript
+* Angular
+* Firebase
+* Design System próprio
+* Mermaid
+
+---
+
+# 📌 Roadmap
+
+## ✅ Concluído
+
+* Home
+* Perfis
+* Catálogo
+* Projetos
+* Case Studies
+* Template Store
+* Configurações
+
+## 🚧 Em desenvolvimento
+
+* Autenticação completa
+* Sistema de favoritos
+* Busca avançada
+* Progressive Web App (PWA)
+* Dashboard administrativo
+
+---
+
+# 📄 Licença
+
+Este projeto foi desenvolvido para fins de estudo, demonstração de portfólio e evolução contínua da plataforma **DOMFLIX**.
