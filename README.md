@@ -135,31 +135,17 @@ O projeto segue organização por funcionalidades.
 
 ```text
 src/
-
 ├── app/
-
 │   ├── core/
-
 │   ├── shared/
-
 │   ├── features/
-
 │   │      ├── home
-
 │   │      ├── auth
-
 │   │      ├── catalog
-
 │   │      ├── movie
-
-│   │      ├── player
-
 │   │      ├── profile
-
 │   │      └── admin
-
 │   └── layouts/
-
 └── assets/
 ```
 
@@ -357,27 +343,16 @@ Essa arquitetura facilita a escalabilidade da aplicação, melhora a manutençã
 ## 🧱 Princípios Utilizados
 
 ✔ Componentização
-
 ✔ SOLID
-
 ✔ DRY
-
 ✔ Clean Code
-
 ✔ Lazy Loading
-
 ✔ Standalone Components
-
 ✔ Signals
-
 ✔ Mobile First
-
 ✔ Feature First
-
 ✔ Design System
-
 ✔ Firebase Cloud
-
 ✔ CI/CD
 
 ---
