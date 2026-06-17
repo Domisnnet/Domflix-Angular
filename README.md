@@ -230,8 +230,8 @@ A autenticação utiliza Firebase Authentication, permitindo login seguro e gere
 <h2 id="codigo-fonte">9. 💻 Código Fonte</h2>
 
 Explore toda a arquitetura da DOMFLIX através do repositório oficial no GitHub.
-![Angular](https://img.shields.io/badge/Angular-20-DD0031?style=for-the-badge&logo=angular&logoColor=white)
-[![Repositório](https://img.shields.io/badge/Repositório-Domisnnet%2FDOMFLIX-DD0031?style=for-the-badge&logo=github&labelColor=0d1117)](https://github.com/Domisnnet/Domflix-Angular)
+
+![Angular](https://img.shields.io/badge/Angular-20-DD0031?style=for-the-badge&logo=angular&logoColor=white)[![Repositório](https://img.shields.io/badge/Repositório-Domisnnet%2FDOMFLIX-DD0031?style=for-the-badge&logo=github&labelColor=0d1117)](https://github.com/Domisnnet/Domflix-Angular)
 
 ---
 
@@ -301,9 +301,7 @@ Essa arquitetura facilita a escalabilidade da aplicação, melhora a manutençã
 ## 🙏 Agradecimentos
 
 Este projeto representa uma evolução significativa da minha jornada como Desenvolvedor Front-end.
-
 Cada componente foi desenvolvido buscando:
-
 - Código limpo
 - Alta performance
 - Escalabilidade
@@ -316,15 +314,12 @@ Cada componente foi desenvolvido buscando:
 <h2 id="licenca">11. 📄 Licença</h2>
 
 Este projeto encontra-se licenciado sob a licença MIT.
-
 Você pode utilizá-lo para fins de estudo, aprendizado e inspiração, respeitando os termos da licença.
-
 [![Licença MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 ---
 
 <h2 id="perfil-do-github">12. 👨‍💻 Perfil do GitHub</h2>
-
   <a href="https://github.com/Domisnnet">
     <img  src="src/assets/images/DomisDev.png"  width="90"  style="border-radius:50%;"  alt="DomisDev">
   </a>
@@ -334,9 +329,7 @@ Você pode utilizá-lo para fins de estudo, aprendizado e inspiração, respeita
 ## 🚀 Sobre o Autor
 
 Desenvolvedor especializado em aplicações Front-end modernas utilizando Angular.
-
 ### Stack Principal
-
 - Angular
 - TypeScript
 - SCSS
@@ -352,7 +345,6 @@ Desenvolvedor especializado em aplicações Front-end modernas utilizando Angula
 ### 📬 Contato
 
 Caso queira conversar sobre desenvolvimento Front-end, Angular ou oportunidades profissionais:
-
 - GitHub
 - LinkedIn
 - Portfólio
@@ -363,9 +355,6 @@ Caso queira conversar sobre desenvolvimento Front-end, Angular ou oportunidades 
 # ⭐ Se este projeto foi útil para você...
 
 Considere deixar uma ⭐ no repositório.
-
 Esse pequeno gesto ajuda na divulgação do projeto e incentiva o desenvolvimento de novas funcionalidades.
-
 Obrigado por visitar a DOMFLIX!
-
 🍿🎬
