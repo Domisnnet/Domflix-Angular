@@ -8,7 +8,6 @@
 ![Angular](https://img.shields.io/badge/Angular-20-DD0031?style=flat-square&logo=angular&logoColor=white)
 ![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black)
 ![License](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)
-
 ![DOMFLIX](src/assets/logo/logo.svg)
 
 A **DOMFLIX** é uma plataforma de streaming desenvolvida para demonstrar técnicas modernas de desenvolvimento Front-end utilizando **Angular 20**, arquitetura **Standalone**, **Signals**, **Angular Material** e toda a infraestrutura do **Firebase**.
@@ -47,28 +46,11 @@ Além do catálogo de filmes e séries, a aplicação possui autenticação, ger
 <h2 id="como-acessar">3. 🚀 Como Acessar</h2>
 
 Assim que publicado, o projeto poderá ser acessado através do Firebase Hosting.
-
 <div align="left">
-
-<a href="https://github.com/Domisnnet/Domflix-Angular" target="_blank">
-
-<img src="src/assets/images/botão.webp" height="70"/>
-
-</a>
-
+  <a href="https://github.com/Domisnnet/Domflix-Angular" target="_blank">
+    <img src="src/assets/images/botão.webp" height="70"/>
+  </a>
 </div>
-
-Também é possível executar localmente:
-
-```bash
-git clone https://github.com/Domisnnet/DOMFLIX.git
-
-cd DOMFLIX
-
-npm install
-
-ng serve
-```
 
 ---
 
@@ -94,7 +76,6 @@ ng serve
 ### 🎯 Arquitetura Standalone Angular 20
 
 A DOMFLIX foi construída utilizando a arquitetura **Standalone Components**, eliminando completamente a necessidade de **NgModules**. Essa abordagem reduz a complexidade do projeto, melhora o carregamento das rotas e facilita a manutenção do código.
-
 Cada funcionalidade da aplicação possui sua própria estrutura de componentes, serviços e modelos, tornando o desenvolvimento muito mais organizado e escalável.
 
 ---
@@ -102,7 +83,6 @@ Cada funcionalidade da aplicação possui sua própria estrutura de componentes,
 ### ⚡ Angular Signals
 
 O gerenciamento de estado utiliza **Signals**, tecnologia oficial do Angular para reatividade.
-
 Entre as principais vantagens estão:
 
 - Atualizações automáticas da interface.
@@ -115,7 +95,6 @@ Entre as principais vantagens estão:
 ### 🔥 Firebase como Backend
 
 Toda a infraestrutura da aplicação está centralizada no Firebase.
-
 Serviços utilizados:
 
 | Serviço | Finalidade |
@@ -132,23 +111,14 @@ Serviços utilizados:
 ### 🧱 Arquitetura Feature First
 
 O projeto segue organização por funcionalidades.
-
 ```text
 src/
 ├── app/
 │   ├── core/
-│   ├── shared/
 │   ├── features/
-│   │      ├── home
-│   │      ├── auth
-│   │      ├── catalog
-│   │      ├── movie
-│   │      ├── profile
-│   │      └── admin
-│   └── layouts/
+│   ├── shared/
 └── assets/
 ```
-
 Essa organização facilita o crescimento da aplicação conforme novos módulos são adicionados.
 
 ---
@@ -156,13 +126,11 @@ Essa organização facilita o crescimento da aplicação conforme novos módulos
 ### 🎨 Design System
 
 A interface foi construída utilizando:
-
 - Angular Material
 - SCSS Modular
 - Variáveis globais
 - Mixins reutilizáveis
 - Responsividade Mobile First
-
 Todo o sistema visual mantém consistência entre componentes e facilita futuras evoluções.
 
 ---
@@ -170,31 +138,24 @@ Todo o sistema visual mantém consistência entre componentes e facilita futuras
 <h2 id="fluxo-de-deploy">6. 📦 Fluxo de Deploy</h2>
 
 O deploy da aplicação utiliza Firebase Hosting integrado ao GitHub.
-
 Para publicar uma nova versão basta executar:
-
 ```bash
 ng build --configuration production
 ```
-
 Em seguida:
-
 ```bash
 firebase deploy
 ```
-
 ---
 
 ### 🔄 Pipeline CI/CD
 
 Cada atualização enviada para a branch principal pode executar automaticamente:
-
 - Instalação das dependências
 - Build Angular
 - Testes
 - Deploy Firebase
 - Atualização do ambiente de produção
-
 Esse fluxo reduz erros manuais e mantém a aplicação sempre atualizada.
 
 ---
@@ -202,7 +163,6 @@ Esse fluxo reduz erros manuais e mantém a aplicação sempre atualizada.
 <h2 id="como-contribuir">7. 🤝 Como Contribuir</h2>
 
 Contribuições são muito bem-vindas.
-
 Caso queira colaborar com melhorias no projeto, siga os passos abaixo.
 
 | Etapa | Ação | Comando |
@@ -218,13 +178,11 @@ Caso queira colaborar com melhorias no projeto, siga os passos abaixo.
 ### 🐞 Encontrou algum problema?
 
 Caso identifique algum bug:
-
 - Abra uma Issue
 - Descreva o problema
 - Informe navegador
 - Informe dispositivo
 - Informe versão do projeto
-
 Isso ajuda a manter a qualidade da aplicação.
 
 ---
@@ -232,57 +190,39 @@ Isso ajuda a manter a qualidade da aplicação.
 <h2 id="faq">8. 🧠 Perguntas Frequentes</h2>
 
 <details>
-
 <summary><strong>Por que Angular Standalone ao invés de NgModules?</strong></summary>
-
 O Angular moderno recomenda Standalone Components por simplificar a arquitetura, melhorar o Lazy Loading e reduzir dependências entre módulos.
-
 </details>
 
 ---
 
 <details>
-
 <summary><strong>Por que utilizar Firebase?</strong></summary>
-
 O Firebase oferece autenticação, banco de dados, armazenamento e hospedagem em uma única plataforma totalmente integrada ao Angular.
-
 </details>
 
 ---
 
 <details>
-
 <summary><strong>A aplicação utiliza Signals?</strong></summary>
-
 Sim.
-
 Grande parte do gerenciamento de estado utiliza Angular Signals para garantir maior desempenho e código mais limpo.
-
 </details>
 
 ---
 
 <details>
-
 <summary><strong>O projeto é responsivo?</strong></summary>
-
 Sim.
-
 Toda a interface foi desenvolvida utilizando abordagem Mobile First, adaptando automaticamente o layout para smartphones, tablets e desktops.
-
 </details>
 
 ---
 
 <details>
-
 <summary><strong>Existe autenticação?</strong></summary>
-
 Sim.
-
 A autenticação utiliza Firebase Authentication, permitindo login seguro e gerenciamento de usuários.
-
 </details>
 
 ---
@@ -290,9 +230,7 @@ A autenticação utiliza Firebase Authentication, permitindo login seguro e gere
 <h2 id="codigo-fonte">9. 💻 Código Fonte</h2>
 
 Explore toda a arquitetura da DOMFLIX através do repositório oficial no GitHub.
-
 ![Angular](https://img.shields.io/badge/Angular-20-DD0031?style=for-the-badge&logo=angular&logoColor=white)
-
 [![Repositório](https://img.shields.io/badge/Repositório-Domisnnet%2FDOMFLIX-DD0031?style=for-the-badge&logo=github&labelColor=0d1117)](https://github.com/Domisnnet/Domflix-Angular)
 
 ---
@@ -300,24 +238,20 @@ Explore toda a arquitetura da DOMFLIX através do repositório oficial no GitHub
 ## 📂 Organização do Projeto
 
 A estrutura segue o conceito **Feature First**, permitindo que cada funcionalidade evolua de maneira independente.
-
 ```text
 src
-│
 ├── app
 │   ├── core
 │   │   ├── guards
 │   │   ├── interceptors
 │   │   ├── layouts
 │   │   └── services
-│   │
 │   ├── shared
 │   │   ├── components
 │   │   ├── directives
 │   │   ├── interfaces
 │   │   ├── models
 │   │   └── pipes
-│   │
 │   ├── features
 │   │   ├── auth
 │   │   ├── home
@@ -328,20 +262,15 @@ src
 │   │   ├── favorites
 │   │   ├── profile
 │   │   └── admin
-│   │
 │   └── app.routes.ts
-│
 ├── assets
-│
 └── environments
 ```
-
 Essa arquitetura facilita a escalabilidade da aplicação, melhora a manutenção do código e reduz o acoplamento entre funcionalidades.
 
 ---
 
 ## 🧱 Princípios Utilizados
-
 ✔ Componentização
 ✔ SOLID
 ✔ DRY
@@ -396,15 +325,9 @@ Você pode utilizá-lo para fins de estudo, aprendizado e inspiração, respeita
 
 <h2 id="perfil-do-github">12. 👨‍💻 Perfil do GitHub</h2>
 
-<a href="https://github.com/Domisnnet">
-
-<img
-src="src/assets/images/DomisDev.png"
-width="90"
-style="border-radius:50%;"
-alt="DomisDev">
-
-</a>
+  <a href="https://github.com/Domisnnet">
+    <img  src="src/assets/images/DomisDev.png"  width="90"  style="border-radius:50%;"  alt="DomisDev">
+  </a>
 
 ---
 
