@@ -322,7 +322,8 @@ Você pode utilizá-lo para fins de estudo, aprendizado e inspiração, respeita
 
 <h2 id="perfil-do-github">12. 👨‍💻 Perfil do GitHub</h2>
   <a href="https://github.com/Domisnnet">
-    <img  src="src/assets/images/DomisDev.png"  width="90"  style="border-radius:50%;"  alt="DomisDev">
+    <img  src="src/assets/images/DomisDev.png" 
+    width="90" style="border-radius:50%; alt="DomisDev">
   </a>
 
 ---
