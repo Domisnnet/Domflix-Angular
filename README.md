@@ -1,6 +1,6 @@
-![GitHub repo size](https://img.shields.io/github/repo-size/Domisnnet/DOMFLIX?style=for-the-badge)
-![GitHub stars](https://img.shields.io/github/stars/Domisnnet/DOMFLIX?style=for-the-badge)
-![GitHub last commit](https://img.shields.io/github/last-commit/Domisnnet/DOMFLIX?style=for-the-badge)
+![GitHub repo size](https://img.shields.io/github/repo-size/Domisnnet/Domflix-Angular?style=for-the-badge)
+![GitHub stars](https://img.shields.io/github/stars/Domisnnet/Domflix-Angular?style=for-the-badge)
+![GitHub last commit](https://img.shields.io/github/last-commit/Domisnnet/Domflix-Angular?style=for-the-badge)
 
 <h2 id="sobre-o-projeto">1. DOMFLIX - Plataforma de Streaming Moderna 🎬🍿</h2>
 
@@ -9,7 +9,7 @@
 ![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black)
 ![License](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)
 
-![DOMFLIX](src/assets/images/logo/logo.svg)
+![DOMFLIX](src/assets/logo/logo.svg)
 
 A **DOMFLIX** é uma plataforma de streaming desenvolvida para demonstrar técnicas modernas de desenvolvimento Front-end utilizando **Angular 20**, arquitetura **Standalone**, **Signals**, **Angular Material** e toda a infraestrutura do **Firebase**.
 
@@ -50,9 +50,9 @@ Assim que publicado, o projeto poderá ser acessado através do Firebase Hosting
 
 <div align="left">
 
-<a href="#" target="_blank">
+<a href="https://github.com/Domisnnet/Domflix-Angular" target="_blank">
 
-<img src="src/assets/images/botao.webp" height="70"/>
+<img src="src/assets/images/botão.webp" height="70"/>
 
 </a>
 
@@ -188,8 +188,6 @@ O deploy da aplicação utiliza Firebase Hosting integrado ao GitHub.
 Para publicar uma nova versão basta executar:
 
 ```bash
-# Build de produção
-
 ng build --configuration production
 ```
 
@@ -309,7 +307,7 @@ Explore toda a arquitetura da DOMFLIX através do repositório oficial no GitHub
 
 ![Angular](https://img.shields.io/badge/Angular-20-DD0031?style=for-the-badge&logo=angular&logoColor=white)
 
-[![Repositório](https://img.shields.io/badge/Repositório-Domisnnet%2FDOMFLIX-DD0031?style=for-the-badge&logo=github&labelColor=0d1117)](https://github.com/Domisnnet/DOMFLIX)
+[![Repositório](https://img.shields.io/badge/Repositório-Domisnnet%2FDOMFLIX-DD0031?style=for-the-badge&logo=github&labelColor=0d1117)](https://github.com/Domisnnet/Domflix-Angular)
 
 ---
 
