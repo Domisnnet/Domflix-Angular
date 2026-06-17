@@ -315,6 +315,7 @@ Cada componente foi desenvolvido buscando:
 
 Este projeto encontra-se licenciado sob a licença MIT.
 Você pode utilizá-lo para fins de estudo, aprendizado e inspiração, respeitando os termos da licença.
+
 [![Licença MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 ---
