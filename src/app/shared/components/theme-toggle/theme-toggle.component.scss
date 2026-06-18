@@ -1,30 +1,97 @@
 :host {
-  display: block;
+  display: none;
 }
 
-.theme-button {
-  display: flex;
-  justify-content: center;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: #1e90ff;
-  padding: 15px;
-  cursor: pointer;
-  overflow: hidden;
-}
+/*==========================================
+  CONFIGURAÇÕES
+==========================================*/
+$accent: #ff3b30;
+$toggle-size: 44px;
+$icon-size: 22px;
+$radius: 12px;
+$transition: 280ms cubic-bezier(.4, 0, .2, 1);
+$hover-bg: rgba(255, 59, 48, .12);
+$focus-ring: rgba(255, 59, 48, .35);
 
-.icon-wrapper {
+/*==========================================
+  BOTÃO
+==========================================*/
+.theme__button {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  font-weight: 800;
-  margin-top: 20px;
+  justify-content: center;
+  appearance: none;
+  border: 2px solid $accent;
+  background: transparent;
+  width: $toggle-size;
+  height: $toggle-size;
+  border-radius: $radius;
+  padding: 0;
+  color: $accent;
+  cursor: pointer;
+  transition: background $transition, transform .15s ease, border-color $transition;
 
-  .icon {
-    width: 50px;
-    height: 50px;
-    color: #000;
-    flex-shrink: 0;
-  }
-}  
+  &:hover { background: $hover-bg; }
+  &:active { transform: scale(.94); }
+  &:focus-visible { box-shadow: 0 0 0 3px $focus-ring; }
+}
+
+/*==========================================
+  WRAPPER SVG                   
+==========================================*/
+.icon__wrapper {
+  position: relative;
+  width: $icon-size;
+  height: $icon-size;
+}
+
+/*==========================================
+  ÍCONES                       
+==========================================*/
+.icon {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  stroke: currentColor;
+  transition: opacity $transition, transform $transition;
+
+}
+
+/*  LIGHT  */
+.sun { opacity: 1; transform: scale(1) rotate(0deg); }
+.moon { opacity: 0; transform: scale(.55) rotate(-45deg); }
+
+/* DARK  */
+.icon__wrapper.is-dark {
+  .sun { opacity: 0; transform: scale(.55) rotate(45deg); }
+  .moon { opacity: 1; transform: scale(1) rotate(0); }
+}
+
+/*==========================================
+  SCREEN READERS                      
+==========================================*/
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+}
+
+/*==========================================
+  REDUCED MOTION                    
+==========================================*/
+@media (prefers-reduced-motion:reduce) {
+  .theme__button,
+  .icon { transition: none; }
+}
+
+/*==========================================
+  RESPONSIVO                      
+==========================================*/
+@media (max-width:991px) {
+  :host { display: inline-flex; }
+}
