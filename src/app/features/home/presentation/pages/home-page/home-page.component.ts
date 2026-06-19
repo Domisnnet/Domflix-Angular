@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterLink } from '@angular/router';
 import { Observable } from 'rxjs';
-import { CatalogRowComponent } from '@app/features/catalog-row/catalog-row.component';
+import { CatalogRowComponent } from '@app/features/home/presentation/components/catalog-row/catalog-row.component';
 import { ContentService } from '@app/core/services/content.service';
 import { ProjectModel } from '@app/core/models/project.model';
 import { CaseStudyModel } from '@app/core/models/case-study.model';
