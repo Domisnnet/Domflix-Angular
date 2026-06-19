@@ -1,6 +1,7 @@
 import { Component, HostListener, signal } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { ThemeToggleComponent } from '@app/shared/components/theme-toggle/theme-toggle.component';
+import { HEADER_NAVIGATION } from '@app/core/layout/header/header.constants';
 
 @Component({
   selector: 'app-header',
@@ -11,9 +12,10 @@ import { ThemeToggleComponent } from '@app/shared/components/theme-toggle/theme-
     ThemeToggleComponent
   ],
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss'],
+  styleUrls:['./header.component.scss'],
 })
 export class HeaderComponent {
+  readonly navigation = HEADER_NAVIGATION;
   readonly menuOpen = signal(false);
   toggleMenu(): void { this.menuOpen.update(value => !value); }
   closeMenu(): void { this.menuOpen.set(false); }

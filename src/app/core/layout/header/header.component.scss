@@ -3,13 +3,12 @@
   inset: 0 0 auto 0;
   z-index: 1000;
   width: 100%;
-
 }
 
 /*==================================
   HEADER                
 ==================================*/
-.main__header {
+.header {
   height: 70px;
   padding: 0 24px;
   display: flex;
@@ -61,18 +60,7 @@
   text-decoration: none;
 }
 
-.header__nav a::after{
-  content:"";
-  position: absolute;
-  left: 0;
-  bottom: -6px;
-  width: 0;
-  height: 2px;
-  transition: .25s;
-}
-
-.header__nav a:hover::after,
-.header__nav a.active::after{
+.header__nav a.active::after {
   width: 100%;
 }
 
@@ -106,18 +94,84 @@
 }
 
 /*==================================
-=         TABLET                   =
+  BACKDROP
 ==================================*/
-@media (max-width:991px){
-  .header__logo--secondary{ display:none; }
-  .header__nav{ display:none; }
-  .header__toggle-menu{ display:flex; justify-content:center; align-items:center; }
+.drawer__backdrop {
+  position: fixed;
+  inset: 0;
+  background:rgba(0,0,0,.6);
+  z-index: 998;
+  animation: fade .25s ease;
+}
+
+/*==================================
+MOBILE DRAWER
+==================================*/
+.mobile__drawer {
+  position: relative;
+  top: 0;
+  right: 80px;
+  width: 250px;
+  max-width: 85vw;
+  height: 100vh;
+  background:#111;
+  transition: right .35s ease;
+  z-index: 999;
+  padding: 90px 30px 30px;
+  overflow-y: auto;
+}
+
+.mobile__drawer.open {
+  right: 0;
+}
+
+.mobile__nav {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.mobile__nav a {
+  color:#fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 700;
+  transition: .25s;
+}
+
+.mobile__nav a:hover {
+  color:#ff3b30;
+  transform: translateX(6px);
+}
+
+.mobile__nav a.active {
+  color:#ff3b30;
+}
+
+/*==================================
+  TABLET                   
+==================================*/
+@media (min-width: 992px) {
+  .mobile__drawer { display: none; }
+}
+
+@media (max-width: 991px) {
+  .header__nav { display: none; }
+  .header__toggle-menu { display: flex; justify-content: center; align-items: center; }
 }
 
 /*==================================
   MOBILE                  
 ==================================*/
-@media (max-width:576px){
-  .main__header{ height:64px; padding:0 16px; }
-  .header__logo img{ width:58px; }
+@media (max-width: 576px){
+  .main__header { height: 64px; padding: 0 16px; }
+  .header__logo img { width: 58px; }
+}
+
+/*==================================
+ANIMATION
+==================================*/
+@keyframes fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
