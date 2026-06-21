@@ -218,7 +218,7 @@ A autenticação utiliza Firebase Authentication, permitindo login seguro e gere
 Explore toda a arquitetura da DOMFLIX através do repositório oficial no GitHub.
 
 ![Angular](https://img.shields.io/badge/Angular-20-DD0031?style=for-the-badge&logo=angular&logoColor=white)
-[![Repositório](https://img.shields.io/badge/Repositório-Domisnnet%2FDOMFLIX-DD0031?style=for-the-badge&logo=github&labelColor=0d1117)](https://github.com/Domisnnet/Domflix-Angular)
+[![Repositório](https://img.shields.io/badge/Repositório-Domisnnet%2FDomflix--Angular-DD0031?style=for-the-badge&logo=github&labelColor=0d1117)](https://github.com/Domisnnet/Domflix-Angular)
 
 ---
 
