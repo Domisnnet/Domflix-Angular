@@ -162,65 +162,51 @@ Esse fluxo reduz erros manuais e mantém a aplicação sempre atualizada.
 
 <h2 id="como-contribuir">7. 🤝 Como Contribuir</h2>
 
-Contribuições são muito bem-vindas.
-Caso queira colaborar com melhorias no projeto, siga os passos abaixo.
+Siga os passos abaixo para fortalecer este projeto e sugerir melhorias:
 
-| Etapa | Ação | Comando |
+| Fase | Ação | Link / Comando |
 | :---: | :--- | :--- |
-| **01** | Fork | Repositório GitHub |
-| **02** | Branch | `git checkout -b feature/minha-feature` |
-| **03** | Commit | `git commit -m "feat: nova funcionalidade"` |
-| **04** | Push | `git push origin feature/minha-feature` |
-| **05** | Pull Request | Abrir PR |
+| **01** | **Fork** | [![Fork](https://img.shields.io/badge/-Fazer%20Fork-blue?style=flat-square&logo=github)](https://github.com/Domisnnet/Domflix-Angular/fork) |
+| **02** | **Branch** | `git checkout -b feature/MinhaMelhoria` |
+| **03** | **Commit** | `git commit -m 'feat: add nova seção de projetos'` |
+| **04** | **Push** | `git push origin feature/MinhaMelhoria` |
+| **05** | **PR** | [![Abrir PR](https://img.shields.io/badge/-Abrir%20PR-green?style=flat-square&logo=git)](https://github.com/Domisnnet/Domflix-Angular/compare)
 
----
+### 🐛 Encontrou um problema?
+Se algo não estiver funcionando como esperado, não hesite em abrir um chamado:
 
-### 🐞 Encontrou algum problema?
+[![Issues Abertas](https://img.shields.io/github/issues/Domisnnet/portfolio?style=flat-square&color=red&logo=github)](https://github.com/Domisnnet/Domflix-Angular/issues)
+[![Report Bug](https://img.shields.io/badge/Reportar-Erro-critical?style=flat-square&logo=github)](https://github.com/Domisnnet/Domflix-Angular/issues/new)
 
-Caso identifique algum bug:
-- Abra uma Issue
-- Descreva o problema
-- Informe navegador
-- Informe dispositivo
-- Informe versão do projeto
-Isso ajuda a manter a qualidade da aplicação.
 
 ---
 
 <h2 id="faq">8. 🧠 Perguntas Frequentes</h2>
 
 <details>
-<summary><strong>Por que Angular Standalone ao invés de NgModules?</strong></summary>
+<summary><strong>Por que Angular Standalone ao invés de NgModules ❓</strong></summary>
 O Angular moderno recomenda Standalone Components por simplificar a arquitetura, melhorar o Lazy Loading e reduzir dependências entre módulos.
 </details>
 
----
-
 <details>
-<summary><strong>Por que utilizar Firebase?</strong></summary>
+<summary><strong>Por que utilizar Firebase ❓</strong></summary>
 O Firebase oferece autenticação, banco de dados, armazenamento e hospedagem em uma única plataforma totalmente integrada ao Angular.
 </details>
 
----
-
 <details>
-<summary><strong>A aplicação utiliza Signals?</strong></summary>
+<summary><strong>A aplicação utiliza Signals ❓</strong></summary>
 Sim.
 Grande parte do gerenciamento de estado utiliza Angular Signals para garantir maior desempenho e código mais limpo.
 </details>
 
----
-
 <details>
-<summary><strong>O projeto é responsivo?</strong></summary>
+<summary><strong>O projeto é responsivo ❓</strong></summary>
 Sim.
 Toda a interface foi desenvolvida utilizando abordagem Mobile First, adaptando automaticamente o layout para smartphones, tablets e desktops.
 </details>
 
----
-
 <details>
-<summary><strong>Existe autenticação?</strong></summary>
+<summary><strong>Existe autenticação ❓</strong></summary>
 Sim.
 A autenticação utiliza Firebase Authentication, permitindo login seguro e gerenciamento de usuários.
 </details>
@@ -231,7 +217,8 @@ A autenticação utiliza Firebase Authentication, permitindo login seguro e gere
 
 Explore toda a arquitetura da DOMFLIX através do repositório oficial no GitHub.
 
-![Angular](https://img.shields.io/badge/Angular-20-DD0031?style=for-the-badge&logo=angular&logoColor=white)[![Repositório](https://img.shields.io/badge/Repositório-Domisnnet%2FDOMFLIX-DD0031?style=for-the-badge&logo=github&labelColor=0d1117)](https://github.com/Domisnnet/Domflix-Angular)
+![Angular](https://img.shields.io/badge/Angular-20-DD0031?style=for-the-badge&logo=angular&logoColor=white)
+[![Repositório](https://img.shields.io/badge/Repositório-Domisnnet%2FDOMFLIX-DD0031?style=for-the-badge&logo=github&labelColor=0d1117)](https://github.com/Domisnnet/Domflix-Angular)
 
 ---
 
@@ -313,20 +300,11 @@ Cada componente foi desenvolvido buscando:
 
 <h2 id="licenca">11. 📄 Licença</h2>
 
-Este projeto encontra-se licenciado sob a licença MIT.
-Você pode utilizá-lo para fins de estudo, aprendizado e inspiração, respeitando os termos da licença.
-
-[![Licença MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+Este projeto está sob a [![Licença MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/Domisnnet/Domflix-Angular/blob/main/LICENSE)
 
 ---
 
-<h2 id="perfil-do-github">12. 👨‍💻 Perfil do GitHub</h2>
-  <a href="https://github.com/Domisnnet">
-    <img  src="src/assets/images/DomisDev.png" 
-    width="90" style="border-radius:50%; alt="DomisDev">
-  </a>
-
----
+<h2 id="perfil-do-github">12. 👨‍💻 Perfil do GitHub / Autor</h2>
 
 ## 🚀 Sobre o Autor
 
@@ -360,3 +338,7 @@ Considere deixar uma ⭐ no repositório.
 Esse pequeno gesto ajuda na divulgação do projeto e incentiva o desenvolvimento de novas funcionalidades.
 Obrigado por visitar a DOMFLIX!
 🍿🎬
+
+<a href="https://github.com/Domisnnet"> 
+  <img src="src/assets/images/DomisDev.png" width="90" style="border-radius: 50%" alt="DomisDev GitHub"> 
+</a>
