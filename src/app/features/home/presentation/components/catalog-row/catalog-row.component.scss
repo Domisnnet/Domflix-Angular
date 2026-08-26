@@ -1,25 +1,28 @@
+/* ==========================================
+ 🎬 CATALOG-ROW — Design System Aplicado
+========================================== */
 .catalog-row {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
-  padding: 1.5rem 0;
+  gap: var(--space-md);
+  padding: var(--space-2xl) 0;
 }
 
 .catalog-row__header {
-  margin-bottom: 1rem;
+  margin-bottom: var(--space-md);
 
   h2 {
     margin: 0;
-    font-size: 1.35rem;
+    font-size: var(--font-xl);
   }
 }
 
 .catalog-row__list {
   display: grid;
   grid-auto-flow: column;
-  grid-auto-columns: 240px;
-  gap: 1rem;
-  padding-bottom: 1rem;
-}
+  grid-auto-columns: var(--card-width);
+  gap: var(--space-md);
+  padding-bottom: var(--space-md);
+}  

@@ -1,0 +1,26 @@
+/* ==========================================
+ ✨ ANIMAÇÕES E TRANSIÇÕES
+========================================== */
+.fade-in {
+    animation: fadeIn var(--base) ease forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hover-scale {
+    transition: transform var(--fast);
+
+    &:hover {
+        transform: scale(1.03);
+    }
+}

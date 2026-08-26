@@ -1,42 +1,122 @@
-.home {
-  padding: 2rem 1.5rem;
+/* ==========================================
+ 🎬 HOME-PAGE — Design System Aplicado
+========================================== */
+.home-page {
+  padding: var(--space-xl) var(--space-lg);
 }
 
-.home__hero {
-  margin-bottom: 2rem;
-
-  h1 {
-    font-size: 2.5rem;
-    margin-bottom: 0.75rem;
-  }
-
-  p {
-    max-width: 720px;
-    color: rgba(255, 255, 255, 0.75);
-  }
+/* ========================================
+  🎯 SEÇÃO HERO
+======================================== */
+.hero {
+  margin-bottom: var(--space-xl);
 }
 
-.home__actions {
+.hero__content h1 {
+  font-size: var(--font-2-5);
+  margin-bottom: var(--space-12);
+}
+
+.hero__description {
+  max-width: 720px;
+  color: var(--color-text-muted-80);
+}
+
+.hero__actions {
   display: flex;
-  gap: 1rem;
-  margin-top: 1.5rem;
+  gap: var(--space-md);
+  margin-top: var(--space-lg);
 }
 
+/* ========================================
+  🔘 BOTÕES — Padronizados
+======================================== */
 .btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0.85rem 1.2rem;
-  border-radius: 999px;
+  padding: var(--space-14) var(--space-19);
+  border-radius: var(--radius-pill);
   text-decoration: none;
+  font-weight: 600;
+  transition: all var(--transition-fast);
 }
 
 .btn--primary {
-  background: #e50914;
-  color: #fff;
+  background: var(--color-primary);
+  color: var(--color-text);
+
+  &:hover {
+    background: var(--color-primary-hover);
+  }
 }
 
 .btn--secondary {
-  background: rgba(255, 255, 255, 0.08);
-  color: #fff;
+  background: rgba(255, 255, 255, var(--bg-opacity-08));
+  color: var(--color-text);
+
+  &:hover {
+    background: rgba(255, 255, 255, var(--bg-opacity-12));
+  }
+}
+
+/* ========================================
+  📚 SEÇÃO CASES
+======================================== */
+.home-page__rows {
+  margin-top: var(--space-2xl);
+}
+
+.home-page__section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-lg);
+
+  h2 {
+    font-size: var(--font-xl);
+  }
+
+  a {
+    color: var(--color-text-muted);
+    text-decoration: none;
+
+    &:hover {
+      color: var(--color-text);
+      text-decoration: underline;
+    }
+  }
+}
+
+.home-page__case-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--space-lg);
+}
+
+.home-page__case-card {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: rgba(255, 255, 255, var(--bg-opacity-04));
+
+  img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+  }
+
+  div {
+    padding: var(--space-md);
+
+    h3 {
+      margin: 0 0 var(--space-sm);
+      font-size: var(--font-base);
+    }
+
+    p {
+      margin: 0;
+      color: var(--color-text-muted);
+      font-size: var(--font-sm);
+    }
+  }
 }

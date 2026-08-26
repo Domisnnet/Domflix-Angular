@@ -1,0 +1,57 @@
+/* ==========================================
+ 🧩 MIXINS — Combinam --var para construir
+========================================== */
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flex-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin container {
+    width: 100%;
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding: 0 var(--space-md);
+}
+
+/* 📱 RESPONSIVIDADE */
+@mixin respond-to($breakpoint) {
+    @if $breakpoint =="md" {
+        @media (min-width: 768px) {
+            @content;
+        }
+    }
+
+    @if $breakpoint =="lg" {
+        @media (min-width: 1024px) {
+            @content;
+        }
+    }
+
+    @if $breakpoint =="xl" {
+        @media (min-width: 1280px) {
+            @content;
+        }
+    }
+}
+
+/* 🔘 BOTÃO PADRÃO */
+@mixin button-primary {
+    background-color: var(--color-primary);
+    color: white;
+    padding: var(--space-sm) var(--space-lg);
+    border-radius: var(--radius-md);
+    font-weight: 600;
+    transition: background-color var(--fast), transform var(--fast);
+
+    &:hover {
+        background-color: var(--color-primary-hover);
+        transform: scale(1.05);
+    }
+}

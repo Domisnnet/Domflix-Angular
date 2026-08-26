@@ -1,29 +1,32 @@
+/* ==========================================
+ 🎬 PROFILES — Design System Aplicado
+========================================== */
 .profiles {
-  padding: 2rem 1.5rem;
+  padding: var(--space-3xl) var(--space-2xl);
 }
 
 .profiles__list {
   display: flex;
-  gap: 1.25rem;
+  gap: var(--space-xl);
   flex-wrap: wrap;
   list-style: none;
   padding: 0;
-  margin: 1.5rem 0 0;
+  margin: var(--space-2xl) 0 0;
 }
 
 .profiles__card {
   display: grid;
   justify-items: center;
-  gap: 0.75rem;
+  gap: var(--space-md);
   background: transparent;
   border: 0;
-  color: #fff;
+  color: var(--color-text);
   cursor: pointer;
 
   img {
-    border-radius: 14px;
-    width: 128px;
-    height: 128px;
+    border-radius: var(--radius-xl);
+    width: var(--avatar-size);
+    height: var(--avatar-size);
     object-fit: cover;
   }
 }

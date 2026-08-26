@@ -1,7 +1,10 @@
+/* ==========================================
+ 🎬 CASE-CARD — Design System Aplicado
+========================================== */
 .case-card {
-  border-radius: 16px;
+  border-radius: var(--radius-xl);         
   overflow: hidden;
-  background: rgba(255, 255, 255, 0.04);
+  background: rgba(255, 255, 255, var(--bg-opacity-04)); 
 }
 
 .case-card__image {
@@ -12,28 +15,28 @@
 }
 
 .case-card__body {
-  padding: 1rem;
+  padding: var(--space-md);               
 
   h3 {
-    margin: 0 0 0.5rem;
+    margin: 0 0 var(--space-sm);             
   }
 
   p {
     margin: 0;
-    color: rgba(255, 255, 255, 0.75);
+    color: var(--color-text-muted-80);
   }
 }
 
 .case-card__stack {
   display: flex;
-  gap: 0.5rem;
+  gap: var(--space-sm);                    
   flex-wrap: wrap;
-  margin-top: 0.75rem;
+  margin-top: var(--space-md);          
 
   span {
-    padding: 0.3rem 0.65rem;
-    border-radius: 999px;
-    background: rgba(255, 255, 255, 0.08);
-    font-size: 0.8rem;
+    padding: var(--space-xs) var(--space-md); 
+    border-radius: var(--radius-pill);       
+    background: rgba(255, 255, 255, var(--bg-opacity-08));
+    font-size: var(--font-xs);              
   }
 }

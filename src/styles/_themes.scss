@@ -1,0 +1,26 @@
+/* ==========================================
+  🌙 SISTEMA DE TEMAS — Sobrescreve Tokens
+========================================== */
+
+/* TEMA ESCURO (PADRÃO) */
+:root,
+:root[data-theme="dark"] {
+  --color-bg:            #141414;
+  --color-bg-alt:        #181818;
+  --color-surface:       #232323;
+  --color-surface-hover: #2e2e2e;
+  --color-text:          #FFF;
+  --color-text-muted:    #B3B3B3;
+  --color-border:        #333;
+}
+
+/* TEMA CLARO — SOBRESCREVE APENAS O QUE MUDA */
+:root[data-theme="light"] {
+  --color-bg:            #FFF;
+  --color-bg-alt:        #F5F5F5;
+  --color-surface:       #E8E8E8;
+  --color-surface-hover: #DCDCDC;
+  --color-text:          #141414;
+  --color-text-muted:    #666;
+  --color-border:        #DDD;
+}
