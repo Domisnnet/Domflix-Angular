@@ -1,18 +1,23 @@
 /* ==========================================
  ✨ ANIMAÇÕES E TRANSIÇÕES
 ========================================== */
+@keyframes fade {
+    from { opacity: var(--op-hidden); }
+    to   { opacity: var(--op-visible); }
+}
+
 .fade-in {
     animation: fadeIn var(--base) ease forwards;
 }
 
 @keyframes fadeIn {
     from {
-        opacity: 0;
+        opacity: var(--op-hidden);
         transform: translateY(10px);
     }
 
     to {
-        opacity: 1;
+        opacity: var(--op-visible);
         transform: translateY(0);
     }
 }

@@ -1,18 +1,38 @@
+/* ==========================================
+  🦶 FOOTER
+========================================== */
 :host {
   display: block;
+  position: absolute;
   width: 100%;
-  z-index: 30;
+  overflow: hidden;
+  z-index: var(--z-footer);
 }
 
 .footer {
-  padding: 1rem 1.5rem;
-  text-align: center;
-  color: rgba(255, 255, 255, 0.72);
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
-  background: rgba(0, 0, 0, 0.9);
-}
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-lg) var(--space-xl);
+  height: var(--footer-height);
+  text-align: center;  
+  background: var(--color-bg-absolute);
+  backdrop-filter: blur(var(--blur-header));
 
-.footer__subtitle {
-  margin-top: 0.25rem;
-  font-size: 0.85rem;
+  h3 {
+    color: var(--color-text-nav);
+    margin: 0;
+    line-height: 1.5;
+    font-size: var(--font-base); 
+    font-weight: var(--font-bolder);               
+  }
+
+  .footer__subtitle {
+    margin-top: var(--space-lg);     
+    margin-bottom: var(--space-xs);  
+    font-size: var(--space-14);      
+    font-weight: var(--font-bolder);         
+    color: var(--color-text-nav); 
+  }
 }
