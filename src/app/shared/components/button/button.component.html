@@ -1,21 +1,21 @@
-<!-- LINK -->
-<a *ngIf="isLink" class="btn" [ngClass]="buttonClasses" [href]="href">
+<!-- LINK EXTERNO -->
+<a *ngIf="isLink" class="btn" [ngClass]="buttonClasses" [href]="href" [target]="target" [rel]="computedRel" [attr.aria-label]="ariaLabel">
   <span class="btn-content">
     {{ text }}
     <ng-content></ng-content>
   </span>
 </a>
 
-<!-- ROUTER -->
-<a *ngIf="!isLink && isRouterLink" class="btn" [ngClass]="buttonClasses" [routerLink]="routerLink">
+<!-- LINK INTERNO (ROUTER) -->
+<a *ngIf="!isLink && isRouterLink" class="btn" [ngClass]="buttonClasses" [routerLink]="routerLink" [attr.aria-label]="ariaLabel">
   <span class="btn-content">
     {{ text }}
     <ng-content></ng-content>
   </span>
 </a>
 
-<!-- BUTTON -->
-<button *ngIf="!isLink && !isRouterLink" class="btn" [ngClass]="buttonClasses" [type]="type">
+<!-- BOTÃO NATIVO -->
+<button *ngIf="!isLink && !isRouterLink" class="btn" [ngClass]="buttonClasses" [type]="type" [disabled]="disabled || loading" [attr.aria-label]="ariaLabel">
   <span class="btn-content">
     {{ text }}
     <ng-content></ng-content>

@@ -10,7 +10,11 @@ import { mapCaseStudyToProject } from '@app/core/models/case-study.mapper';
 @Component({
   selector: 'app-home-page',
   standalone: true,
-  imports: [CommonModule, RouterLink, CatalogRowComponent],
+  imports: [
+    CommonModule, 
+    RouterLink, 
+    CatalogRowComponent
+  ],
   templateUrl: './home-page.component.html',
   styleUrls: ['./home-page.component.scss'],
 })

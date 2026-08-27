@@ -9,15 +9,14 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./theme-toggle.component.scss'],
 })
 export class ThemeToggleComponent {
-  readonly isDark = signal(localStorage.getItem('theme') === 'dark');
+  readonly isDark = signal<boolean>(typeof localStorage !== 'undefined' && localStorage.getItem('theme') !== 'light');
   constructor() {
     effect(() => {
       const dark = this.isDark();
-      document.documentElement.classList.toggle('dark', dark);
-      localStorage.setItem('theme', dark ? 'dark' : 'light');
+      if (typeof document !== 'undefined' && typeof localStorage !== 'undefined') {
+        document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
+        localStorage.setItem('theme', dark ? 'dark' : 'light');
+      }
     });
-  }
-  toggle(): void {
-    this.isDark.update((value) => !value);
-  }
+  } toggle(): void { this.isDark.update((value: boolean) => !value); }
 }

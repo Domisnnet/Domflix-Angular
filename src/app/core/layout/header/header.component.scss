@@ -50,9 +50,7 @@
     text-decoration: none;
     font-size: var(--font-lg);
     font-weight: var(--font-bolder);
-    transition:
-      color var(--transition-fast),
-      transform var(--transition-fast);
+    transition: color var(--transition-fast), transform var(--transition-fast);
 
     &::after {
       content: '';
@@ -92,16 +90,13 @@
   justify-content: center;
   width: var(--touch-target);
   height: var(--touch-target);
-  border: var(--border-accent);
+  border: var(--border-thick) solid var(--color-primary);
   border-radius: var(--radius-btn);
   background: transparent;
   color: var(--color-primary);
   font-size: var(--font-22);
   cursor: pointer;
-  transition:
-    background var(--transition-fast),
-    color var(--transition-fast),
-    border-color var(--transition-fast);
+  transition: background var(--transition-fast), color var(--transition-fast), border-color var(--transition-fast);
 
   &:hover {
     background: rgba(229, 9, 20, var(--bg-opacity-12));
@@ -123,7 +118,7 @@
   opacity: var(--op-hiden);
   visibility: hidden;
   transition: all var(--transition-base);
-  z-index: var(--z-drawer);
+  z-index: var(--z-header);
 
   &--open {
     transform: translateY(0);

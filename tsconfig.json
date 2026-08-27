@@ -12,6 +12,7 @@
     "importHelpers": true,
     "target": "ES2022",
     "module": "preserve",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
     "baseUrl": "./",
     "paths": {
       "@app/*": ["src/app/*"],
