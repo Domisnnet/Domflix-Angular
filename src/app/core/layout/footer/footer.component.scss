@@ -3,20 +3,25 @@
 ========================================== */
 :host {
   display: block;
-  position: absolute;
+  position: relative;
   width: 100%;
-  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  flex-shrink: 0;
   z-index: var(--z-footer);
 }
 
+/* ========================================
+  📚 CONTEÚDO PRINCIPAL
+======================================== */
 .footer {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: var(--space-lg) var(--space-xl);
-  height: var(--footer-height);
-  text-align: center;  
+  min-height: var(--footer-height);
+  text-align: center;
   background: var(--color-bg-absolute);
   backdrop-filter: blur(var(--blur-header));
 
@@ -24,15 +29,23 @@
     color: var(--color-text-nav);
     margin: 0;
     line-height: 1.5;
-    font-size: var(--font-base); 
-    font-weight: var(--font-bolder);               
+    font-size: var(--font-base);
+    font-weight: var(--font-bolder);
   }
 
   .footer__subtitle {
-    margin-top: var(--space-lg);     
-    margin-bottom: var(--space-xs);  
-    font-size: var(--space-14);      
-    font-weight: var(--font-bolder);         
-    color: var(--color-text-nav); 
+    margin-top: var(--space-sm);
+    margin-bottom: var(--space-xs);
+    font-size: var(--space-14);
+    font-weight: var(--font-bolder);
+    color: var(--color-text-nav);
   }
+}
+
+/* ========================================
+  📐 RESPONSIVIDADE
+======================================== */
+@media (max-width: 768px) {
+  .footer { min-height: var(--footer-height-sm); padding: var(--space-md) var(--space-lg); h3 { font-size: var(--font-sm); }
+  .footer__subtitle { margin-top: var(--space-xs); font-size: var(--font-xs); } }
 }

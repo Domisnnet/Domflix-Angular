@@ -1,8 +1,8 @@
 <section class="home-page">
   <section class="hero">
     <div class="hero__content">
-      <p class="hero__eyebrow">Open Source Portfolio</p>
       <h1>Domflix</h1>
+      <h2 class="hero__eyebrow">Open Source Portfolio</h2>
       <p class="hero__description">
         Um Portfólio em formato de streaming, pensado para mostrar projetos,
         case studies e experimentos de forma visual, modular e escalável.
@@ -12,26 +12,17 @@
         <a routerLink="/case-studies" class="btn btn--secondary">Explorar case studies</a>
       </div>
     </div>
+    <div class="hero__fade"></div>
   </section>
-  <section class="home-page__rows" *ngIf="featuredProjects$ | async as featuredProjects">
-    <app-catalog-row title="Projetos em destaque" [items]="featuredProjects"></app-catalog-row>
-  </section>
-  <section class="home-page__rows" *ngIf="experiments$ | async as experiments">
-    <app-catalog-row title="Experimentos e laboratório" [items]="experiments"></app-catalog-row>
-  </section>
-  <section class="home-page__case" *ngIf="caseStudies$ | async as caseStudies">
-    <header class="home-page__section-header">
-      <h2>Case studies recentes</h2>
-      <a routerLink="/case-studies">Ver todos</a>
-    </header>
-    <div class="home-page__case-grid">
-      <article class="home-page__case-card" *ngFor="let study of caseStudies">
-        <img [src]="study.imageUrl" [alt]="study.title" />
-        <div>
-          <h3>{{ study.title }}</h3>
-          <p>{{ study.description }}</p>
-        </div>
-      </article>
-    </div>
-  </section>
+  <main class="home-page__content">
+    <section class="home-page__rows" *ngIf="featuredProjects$ | async as featuredProjects">
+      <app-catalog-row title="Projetos em destaque" [items]="featuredProjects"></app-catalog-row>
+    </section>
+    <section class="home-page__rows" *ngIf="experiments$ | async as experiments">
+      <app-catalog-row title="Experimentos e laboratório" [items]="experiments"></app-catalog-row>
+    </section>
+    <section class="home-page__case" *ngIf="caseStudies$ | async as caseStudies">
+      <app-catalog-row title="Estudos de casos" [items]="caseStudies"></app-catalog-row>
+    </section>
+  </main>
 </section>

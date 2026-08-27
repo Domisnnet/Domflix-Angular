@@ -2,7 +2,7 @@
   🎬 HEADER
 ======================================== */
 :host {
-  position: fixed;
+  position: absolute;
   inset: 0 0 auto;
   width: 100%;
   z-index: var(--z-header);

@@ -28,6 +28,9 @@
    --color-bg-drawer: #111111;
    --color-surface: #232323;
    --color-surface-hover: #2e2e2e;
+   --color-bg-deep: #050510;   
+   --color-bg-mid: #1a1a2e;  
+   --color-bg-darker: #0a0a18; 
     
    /* ========================================
       🔴 COR PRIMÁRIA — Escala completa
@@ -72,12 +75,18 @@
    --container-max: 1400px;
    --footer-height: 100px;
    --footer-height-sm: 80px;
+   --height-mobile: 80vh;
+   --height-tablet: 70vh;
+   --home-height: 80px;
+   --home-height-sm: 64px;
    --header-height: 80px;
    --header-height-sm: 64px;
    --logo-width: 80px;
    --logo-width-sm: 60px;
+   --min-height-mobile: 200px;
    --radius-btn: 10px;
    --touch-target: 44px;
+   --widht-btn: 300px;
     
    /* ========================================
       🎭 OPACIDADES
@@ -165,7 +174,8 @@
    📌 ESCALA DE Z-INDEX
    ======================================== */
    --z-backdrop: 998;
-   --z-drawer: 999;
+   --z-content: 1050;
+   --z-home: 999;
    --z-header: 1000;
    --z-footer: 2000;
 }

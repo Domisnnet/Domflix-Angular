@@ -1,17 +1,8 @@
 /* ==========================================
  🎬 DOMFLIX — DESIGN SYSTEM PRINCIPAL
 ========================================== */
-/* 1. Tokens primeiro → definem tudo */
-@import './tokens';
-
-/* 2. Temas → sobrescrevem tokens */
-@import './themes';
-
-/* 3. Mixins → usam tokens */
-@import './mixins';
-
-/* 4. Estilos base → aplicam tokens */
-@import './base';
-
-/* 5. Animações */
-@import './animations';
+@import './tokens';  /* 1. Tokens primeiro → definem tudo */
+@import './themes';  /* 2. Temas → sobrescrevem tokens */
+@import './mixins';  /* 3. Mixins → usam tokens */
+@import './base';  /* 4. Estilos base → aplicam tokens */
+@import './animations';  /* 5. Animações */
