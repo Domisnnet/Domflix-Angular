@@ -48,7 +48,7 @@ Além do catálogo de filmes e séries, a aplicação possui autenticação, ger
 Assim que publicado, o projeto poderá ser acessado através do Firebase Hosting.
 
 <div align="left">
-  <a href="https://github.com/Domisnnet/Domflix-Angular" target="_blank">
+  <a href=" https://domflix-27043238-51bf0.web.app" target="_blank">
     <img src="src/assets/images/botão.webp" height="70"/>
   </a>
 </div>
