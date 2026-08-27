@@ -2,30 +2,34 @@
  ✨ ANIMAÇÕES E TRANSIÇÕES
 ========================================== */
 @keyframes fade {
-    from { opacity: var(--op-hidden); }
-    to   { opacity: var(--op-visible); }
+  from {
+    opacity: var(--op-hidden);
+  }
+  to {
+    opacity: var(--op-visible);
+  }
 }
 
 .fade-in {
-    animation: fadeIn var(--base) ease forwards;
+  animation: fadeIn var(--base) ease forwards;
 }
 
 @keyframes fadeIn {
-    from {
-        opacity: var(--op-hidden);
-        transform: translateY(10px);
-    }
+  from {
+    opacity: var(--op-hidden);
+    transform: translateY(10px);
+  }
 
-    to {
-        opacity: var(--op-visible);
-        transform: translateY(0);
-    }
+  to {
+    opacity: var(--op-visible);
+    transform: translateY(0);
+  }
 }
 
 .hover-scale {
-    transition: transform var(--fast);
+  transition: transform var(--fast);
 
-    &:hover {
-        transform: scale(1.03);
-    }
+  &:hover {
+    transform: scale(1.03);
+  }
 }

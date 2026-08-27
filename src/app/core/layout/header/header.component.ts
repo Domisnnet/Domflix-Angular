@@ -6,19 +6,21 @@ import { HEADER_NAVIGATION } from '@app/core/layout/header/header.constants';
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [
-    RouterLink,
-    RouterLinkActive,
-    ThemeToggleComponent
-  ],
+  imports: [RouterLink, RouterLinkActive, ThemeToggleComponent],
   templateUrl: './header.component.html',
-  styleUrls:['./header.component.scss'],
+  styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent {
   readonly navigation = HEADER_NAVIGATION;
   readonly menuOpen = signal(false);
-  toggleMenu(): void { this.menuOpen.update(value => !value); }
-  closeMenu(): void { this.menuOpen.set(false); }
+  toggleMenu(): void {
+    this.menuOpen.update((value) => !value);
+  }
+  closeMenu(): void {
+    this.menuOpen.set(false);
+  }
   @HostListener('document:keydown.escape')
-  onEscape(): void { this.closeMenu(); }
+  onEscape(): void {
+    this.closeMenu();
+  }
 }

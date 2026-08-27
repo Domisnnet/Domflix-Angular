@@ -50,7 +50,9 @@
     text-decoration: none;
     font-size: var(--font-lg);
     font-weight: var(--font-bolder);
-    transition: color var(--transition-fast), transform var(--transition-fast);
+    transition:
+      color var(--transition-fast),
+      transform var(--transition-fast);
 
     &::after {
       content: '';
@@ -96,7 +98,10 @@
   color: var(--color-primary);
   font-size: var(--font-22);
   cursor: pointer;
-  transition: background var(--transition-fast), color var(--transition-fast), border-color var(--transition-fast);
+  transition:
+    background var(--transition-fast),
+    color var(--transition-fast),
+    border-color var(--transition-fast);
 
   &:hover {
     background: rgba(229, 9, 20, var(--bg-opacity-12));
@@ -154,15 +159,26 @@
   📐 RESPONSIVIDADE
 ======================================== */
 @media (min-width: 992px) {
-  .header__menu { display: none; }
+  .header__menu {
+    display: none;
+  }
 }
 
 @media (max-width: 991px) {
-  .header__navigation { display: none; }
-  .header__toggle { display: flex; }
+  .header__navigation {
+    display: none;
+  }
+  .header__toggle {
+    display: flex;
+  }
 }
 
 @media (max-width: 576px) {
-  .header { height: var(--header-height-sm); padding: 0 var(--space-md); }
-  .header__logo img { width: var(--logo-width-sm); }
+  .header {
+    height: var(--header-height-sm);
+    padding: 0 var(--space-md);
+  }
+  .header__logo img {
+    width: var(--logo-width-sm);
+  }
 }

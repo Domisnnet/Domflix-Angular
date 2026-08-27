@@ -9,9 +9,9 @@ $accent: #ff3b30;
 $toggle-size: 44px;
 $icon-size: 22px;
 $radius: 12px;
-$transition: 280ms cubic-bezier(.4, 0, .2, 1);
-$hover-bg: rgba(255, 59, 48, .12);
-$focus-ring: rgba(255, 59, 48, .35);
+$transition: 280ms cubic-bezier(0.4, 0, 0.2, 1);
+$hover-bg: rgba(255, 59, 48, 0.12);
+$focus-ring: rgba(255, 59, 48, 0.35);
 
 /*==========================================
   BOTÃO
@@ -29,11 +29,20 @@ $focus-ring: rgba(255, 59, 48, .35);
   padding: 0;
   color: $accent;
   cursor: pointer;
-  transition: background $transition, transform .15s ease, border-color $transition;
+  transition:
+    background $transition,
+    transform 0.15s ease,
+    border-color $transition;
 
-  &:hover { background: $hover-bg; }
-  &:active { transform: scale(.94); }
-  &:focus-visible { box-shadow: 0 0 0 3px $focus-ring; }
+  &:hover {
+    background: $hover-bg;
+  }
+  &:active {
+    transform: scale(0.94);
+  }
+  &:focus-visible {
+    box-shadow: 0 0 0 3px $focus-ring;
+  }
 }
 
 /*==========================================
@@ -54,18 +63,31 @@ $focus-ring: rgba(255, 59, 48, .35);
   width: 100%;
   height: 100%;
   stroke: currentColor;
-  transition: opacity $transition, transform $transition;
-
+  transition:
+    opacity $transition,
+    transform $transition;
 }
 
 /*  LIGHT  */
-.sun { opacity: 1; transform: scale(1) rotate(0deg); }
-.moon { opacity: 0; transform: scale(.55) rotate(-45deg); }
+.sun {
+  opacity: 1;
+  transform: scale(1) rotate(0deg);
+}
+.moon {
+  opacity: 0;
+  transform: scale(0.55) rotate(-45deg);
+}
 
 /* DARK  */
 .icon__wrapper.is-dark {
-  .sun { opacity: 0; transform: scale(.55) rotate(45deg); }
-  .moon { opacity: 1; transform: scale(1) rotate(0); }
+  .sun {
+    opacity: 0;
+    transform: scale(0.55) rotate(45deg);
+  }
+  .moon {
+    opacity: 1;
+    transform: scale(1) rotate(0);
+  }
 }
 
 /*==========================================
@@ -84,14 +106,18 @@ $focus-ring: rgba(255, 59, 48, .35);
 /*==========================================
   REDUCED MOTION                    
 ==========================================*/
-@media (prefers-reduced-motion:reduce) {
+@media (prefers-reduced-motion: reduce) {
   .theme__button,
-  .icon { transition: none; }
+  .icon {
+    transition: none;
+  }
 }
 
 /*==========================================
   RESPONSIVO                      
 ==========================================*/
-@media (max-width:991px) {
-  :host { display: inline-flex; }
+@media (max-width: 991px) {
+  :host {
+    display: inline-flex;
+  }
 }

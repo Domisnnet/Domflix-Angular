@@ -5,5 +5,5 @@ export const HEADER_NAVIGATION: readonly NavigationItem[] = [
   { label: 'Perfis', route: '/profiles' },
   { label: 'Catálogo', route: '/catalog' },
   { label: 'Projetos', route: '/projects' },
-  { label: 'Case Studies', route: '/case-studies' }
+  { label: 'Case Studies', route: '/case-studies' },
 ];

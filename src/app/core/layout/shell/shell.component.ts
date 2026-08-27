@@ -7,12 +7,7 @@ import { FooterComponent } from '@app/core/layout/footer/footer.component';
 @Component({
   selector: 'app-shell',
   standalone: true,
-  imports: [
-    CommonModule,
-    RouterOutlet, 
-    HeaderComponent,
-    FooterComponent 
-  ],
+  imports: [CommonModule, RouterOutlet, HeaderComponent, FooterComponent],
   templateUrl: './shell.component.html',
   styleUrls: ['./shell.component.scss'],
 })

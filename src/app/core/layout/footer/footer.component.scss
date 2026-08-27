@@ -46,6 +46,15 @@
   📐 RESPONSIVIDADE
 ======================================== */
 @media (max-width: 768px) {
-  .footer { min-height: var(--footer-height-sm); padding: var(--space-md) var(--space-lg); h3 { font-size: var(--font-sm); }
-  .footer__subtitle { margin-top: var(--space-xs); font-size: var(--font-xs); } }
+  .footer {
+    min-height: var(--footer-height-sm);
+    padding: var(--space-md) var(--space-lg);
+    h3 {
+      font-size: var(--font-sm);
+    }
+    .footer__subtitle {
+      margin-top: var(--space-xs);
+      font-size: var(--font-xs);
+    }
+  }
 }

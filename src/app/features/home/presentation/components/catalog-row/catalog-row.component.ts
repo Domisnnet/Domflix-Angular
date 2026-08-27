@@ -6,10 +6,7 @@ import { ProjectModel } from '@app/core/models/project.model';
 @Component({
   selector: 'app-catalog-row',
   standalone: true,
-  imports: [
-    CommonModule, 
-    ProjectCardComponent
-  ],
+  imports: [CommonModule, ProjectCardComponent],
   templateUrl: './catalog-row.component.html',
   styleUrls: ['./catalog-row.component.scss'],
 })

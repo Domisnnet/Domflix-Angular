@@ -1,36 +1,38 @@
 <header class="header">
   <a routerLink="/" class="header__logo" (click)="closeMenu()">
-    <img src="assets/logo/Domflix.png" alt="Domflix">
+    <img src="assets/logo/Domflix.png" alt="Domflix" />
   </a>
   <nav class="header__navigation">
-    @for(item of navigation; track item.route){
+    @for (item of navigation; track item.route) {
       <a
         [routerLink]="item.route"
         routerLinkActive="active"
-        [routerLinkActiveOptions]="{exact:item.route === '/'}">
-        {{item.label}}
+        [routerLinkActiveOptions]="{ exact: item.route === '/' }"
+      >
+        {{ item.label }}
       </a>
     }
   </nav>
   <div class="header__actions">
-    <app-theme-toggle/>
+    <app-theme-toggle />
     <button class="header__toggle" (click)="toggleMenu()">
-      @if(menuOpen()){
+      @if (menuOpen()) {
         ✕
-      }@else{
+      } @else {
         ☰
       }
     </button>
   </div>
 </header>
 <nav class="header__menu" [class.header__menu--open]="menuOpen()">
-  @for(item of navigation; track item.route){
+  @for (item of navigation; track item.route) {
     <a
       [routerLink]="item.route"
       routerLinkActive="active"
-      [routerLinkActiveOptions]="{exact:item.route === '/'}"
-      (click)="closeMenu()">
-      {{item.label}}
+      [routerLinkActiveOptions]="{ exact: item.route === '/' }"
+      (click)="closeMenu()"
+    >
+      {{ item.label }}
     </a>
   }
 </nav>
